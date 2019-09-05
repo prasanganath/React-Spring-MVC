@@ -15,7 +15,8 @@ class App extends Component {
       <Router>
       <div className="App">
         <Navbar />
-        <ProjectBoard />
+        <Route exact path="/" component={ProjectBoard} />  
+      
         <Route exact path="/addProjectTask" component={AddProjectTask} />        
       </div>
       </Router>
